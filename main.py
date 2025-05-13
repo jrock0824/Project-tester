@@ -9,6 +9,8 @@ from fastapi.staticfiles import StaticFiles
 # Create FastAPI app instance
 app = FastAPI()
 
+folder_path = "Data"
+
 # Serve static files (CSS, JavaScript, etc.) from the "static" folder
 app.mount("/static", StaticFiles(directory="static"), name="static")
 

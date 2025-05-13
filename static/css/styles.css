@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    box-sizing: border-box; /* Ensures padding and margin are included in width/height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* More modern font option */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f4; /* Light grey background */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #4a90e2; /* Professional blue color */
+    color: white; /* White text on the header */
+    padding: 20px; /* More padding for a better look */
+    text-align: center; /* Center-aligning the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main Content Area */
+main {
+    padding: 40px; /* Increased padding for main content */
+    max-width: 800px; /* Constrains main content width */
+    margin: 20px auto; /* Centering the main content with margins */
+    background-color: white; /* White background for the main content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for visual separation */
+}
+
+/* Typography Styling */
+h1 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+h3 {
+    margin-top: 30px; /* Space above the answer heading */
+    margin-bottom: 10px; /* Space below the answer heading */
+}
+
+/* Form Styling */
+form {
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking form elements */
+    align-items: flex-start; /* Left aligning form items */
+    margin-top: 20px; /* Space above the form */
+}
+
+label {
+    font-size: 1.2em; /* Slightly larger label text */
+    margin-bottom: 5px; /* Spacing below labels */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input field */
+    padding: 10px; /* Padding for text input */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for input */
+    font-size: 1em; /* Keep font size consistent */
+}
+
+input[type="submit"] {
+    background-color: #4a90e2; /* Match button color to header */
+    color: white; /* White text on button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #357ab8; /* Darker blue on hover */
+}
+
+/* Answer Section */
+#answer {
+    font-style: italic; /* Italicize the answer text for differentiation */
+    margin-top: 10px; /* Space above the answer text */
+}
