@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coparent - Parenting Support</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Linking to your CSS file -->
+</head>
+<body>
+    <h1>Welcome to Coparent!</h1>
+    <p>Your partner for co-parenting support.</p>
+
+    <form id="question-form">
+        <label for="question">Ask a question:</label><br>
+        <input type="text" id="question" name="question" required><br><br>
+        <input type="submit" value="Ask">
+    </form>
+
+    <h3>Answer:</h3>
+    <p id="answer"></p>
+
+    <script>
+        const form = document.getElementById('question-form');
+        const answerElement = document.getElementById('answer');
+
+        form.onsubmit = async (event) => {
+            event.preventDefault();
+            const question = document.getElementById('question').value;
+            const response = await fetch(`/ask?question=${encodeURIComponent(question)}`);
+            const data = await response.json();
+            answerElement.textContent = data.answer;
+        };
+    </script>
+</body>
+</html>
