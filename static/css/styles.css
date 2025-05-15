@@ -1,87 +1,159 @@
 /* General Reset */
 * {
-    box-sizing: border-box; /* Ensures padding and margin are included in width/height */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* Body Styling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* More modern font option */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    background-color: #f4f4f4; /* Light grey background */
-    line-height: 1.6; /* Improves readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-    background-color: #4a90e2; /* Professional blue color */
-    color: white; /* White text on the header */
-    padding: 20px; /* More padding for a better look */
-    text-align: center; /* Center-aligning the text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #4a90e2;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 /* Main Content Area */
 main {
-    padding: 40px; /* Increased padding for main content */
-    max-width: 800px; /* Constrains main content width */
-    margin: 20px auto; /* Centering the main content with margins */
-    background-color: white; /* White background for the main content area */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for visual separation */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography Styling */
-h1 {
-    font-size: 2.5em; /* Larger font size for the heading */
-    margin-bottom: 10px; /* Spacing below the heading */
+/* Section Styling */
+.question-section,
+.answer-section {
+    margin-bottom: 40px;
 }
 
-h3 {
-    margin-top: 30px; /* Space above the answer heading */
-    margin-bottom: 10px; /* Space below the answer heading */
+.question-section h2,
+.answer-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 /* Form Styling */
 form {
-    display: flex; /* Using flexbox for layout */
-    flex-direction: column; /* Stacking form elements */
-    align-items: flex-start; /* Left aligning form items */
-    margin-top: 20px; /* Space above the form */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 label {
-    font-size: 1.2em; /* Slightly larger label text */
-    margin-bottom: 5px; /* Spacing below labels */
+    font-size: 1rem;
+    color: #333;
 }
 
 input[type="text"] {
-    width: 100%; /* Full width input field */
-    padding: 10px; /* Padding for text input */
-    margin-bottom: 20px; /* Space below the input */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners for input */
-    font-size: 1em; /* Keep font size consistent */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
+button[type="submit"],
 input[type="submit"] {
-    background-color: #4a90e2; /* Match button color to header */
-    color: white; /* White text on button */
-    padding: 10px 20px; /* Padding inside the button */
-    border: none; /* Remove default button border */
-    border-radius: 5px; /* Rounded corners for button */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+button[type="submit"]:hover,
 input[type="submit"]:hover {
-    background-color: #357ab8; /* Darker blue on hover */
+    background-color: #357ab8;
 }
 
-/* Answer Section */
+/* Answer Display Styling */
 #answer {
-    font-style: italic; /* Italicize the answer text for differentiation */
-    margin-top: 10px; /* Space above the answer text */
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Optional Fade-In Effect */
+#answer[aria-live="polite"] {
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Button Animation */
+.pop {
+    animation: pop-animation 0.3s ease-in-out;
+}
+
+@keyframes pop-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Shake animation for invalid input */
+.shake {
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Persona-specific avatar styles */
+.persona-friendly .ai-avatar {
+    border: 3px solid #4CAF50; /* Green border for friendly persona */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.persona-professional .ai-avatar {
+    border: 3px solid #2196F3; /* Blue border for professional persona */
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+.persona-humorous .ai-avatar {
+    border: 3px solid #FFC107; /* Yellow border for humorous persona */
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
 }

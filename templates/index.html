@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coparent - Parenting Support</title>
-    <link rel="stylesheet" href="/static/css/styles.css"> <!-- Linking to your CSS file -->
+<title>CoParent AI | Smart Parenting Support</title>
+<link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <h1>Welcome to Coparent!</h1>
-    <p>Your partner for co-parenting support.</p>
+    <header>
+        <h1>CoParent AI</h1>
+        <p class="tagline">Empowering Co-Parents with Smart, Compassionate Support</p>
+    </header>
 
-    <form id="question-form">
-        <label for="question">Ask a question:</label><br>
-        <input type="text" id="question" name="question" required><br><br>
-        <input type="submit" value="Ask">
-    </form>
+    <main>
+        <section class="question-section">
+            <h2>Ask a Parenting Question</h2>
+            <form id="question-form" aria-label="Parenting question form">
+                <label for="question">Type your question below:</label>
+                <input type="text" id="question" name="question" placeholder="e.g., How do I handle bedtime routines?" required>
 
-    <h3>Answer:</h3>
-    <p id="answer"></p>
+                <!-- Persona Selection Dropdown -->
+                <label for="persona">Choose a Persona:</label>
+                <select id="persona" name="persona" required>
+                    <option value="friendly">Friendly</option>
+                    <option value="professional">Professional</option>
+                    <option value="humorous">Humorous</option>
+                </select>
 
-    <script>
-        const form = document.getElementById('question-form');
-        const answerElement = document.getElementById('answer');
+                <button type="submit" id="submit-btn">Get Advice</button>
+            </form>
+        </section>
 
-        form.onsubmit = async (event) => {
-            event.preventDefault();
-            const question = document.getElementById('question').value;
-            const response = await fetch(`/ask?question=${encodeURIComponent(question)}`);
-            const data = await response.json();
-            answerElement.textContent = data.answer;
-        };
-    </script>
-</body>
-</html>
+        <section class="answer-section">
+            <h2>AI Response</h2>
+
+            <!-- AI Info Container with Persona-Specific Class -->
+        <div class="ai-info persona-friendly"> <!-- Default class, dynamically updated -->
+        <img src="/static/images/ai-avatar.png" alt="AI Avatar" class="ai-avatar">
+        <p class="ai-name">CoParent AI</p>
+        </div>
+
+            <p id="answer" aria-live="polite">Your answer will appear here.</p>
+        </section>
+    </main>
