@@ -1,0 +1,162 @@
+**Terminal Commands Reference for Development Projects**
+
+---
+
+### 🔧 VIRTUAL ENVIRONMENT MANAGEMENT
+
+**Create a new virtual environment**
+
+```bash
+python -m venv venv
+```
+
+**Activate virtual environment**
+
+* macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+* Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+**Deactivate virtual environment**
+
+```bash
+deactivate
+```
+
+**Install packages from requirements.txt**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Freeze current packages to requirements.txt**
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+### 🧹 GIT COMMANDS
+
+**Initialize a Git repo**
+
+```bash
+git init
+```
+
+**Add files to staging area**
+
+```bash
+git add .
+```
+
+**Commit changes**
+
+```bash
+git commit -m "Your message here"
+```
+
+**Create `.gitignore` file**
+
+```bash
+echo venv/ > .gitignore
+```
+
+**Remove venv from Git tracking**
+
+```bash
+git rm -r --cached venv
+```
+
+**Push to GitHub**
+
+```bash
+git push origin main
+```
+
+**Clone repo**
+
+```bash
+git clone <repo-url>
+```
+
+---
+
+### 🛠️ PROJECT SETUP
+
+**Run FastAPI app (example)**
+
+```bash
+uvicorn main:app --reload
+```
+
+**Check Python version**
+
+```bash
+python --version
+```
+
+**Run a Python file**
+
+```bash
+python filename.py
+```
+
+**List installed packages**
+
+```bash
+pip list
+```
+
+**Check for installed Node.js and npm**
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+### 📁 FILE MANAGEMENT
+
+**List files/folders**
+
+```bash
+ls
+```
+
+**Change directory**
+
+```bash
+cd foldername
+```
+
+**Go back one directory**
+
+```bash
+cd ..
+```
+
+**Make a new directory**
+
+```bash
+mkdir foldername
+```
+
+**Delete a folder**
+
+```bash
+rm -r foldername
+```
+
+---
+
+Let me know if you want to add Docker, PostgreSQL, SSH, or deployment commands!

@@ -66,8 +66,8 @@ async def home():
 
 # Endpoint to get parenting advice based on a question and persona
 @app.get("/ask")
-async def ask_parenting_advice(question: str, persona: str = "friendly"):
-    folder_path = "parenting_guides"  # Your folder with parenting guide text files
+async def ask_parenting_advice(question: str, persona: str):
+    folder_path = "Data"  # Your folder with parenting guide text files
 
     # Load and chunk the text content from parenting guides
     chunks = load_and_chunk_folder(folder_path)
@@ -77,13 +77,10 @@ async def ask_parenting_advice(question: str, persona: str = "friendly"):
     persona_prompts = {
         "friendly": "Answer in a warm and friendly tone.",
         "professional": "Provide a detailed and professional response.",
-        "humorous": "Respond with a lighthearted and humorous tone.",
-    }
-    persona_prompt = persona_prompts.get(persona, "Answer in a neutral tone.")
+        "humorous": "Respond with a lighthearted and humorous tone.", 
+    }.get(persona, "Answer in a neutral tone.")
 
     # Combine persona prompt with the context
-    full_prompt = f"{persona_prompt}\n\nContext:\n{context}\n\nQuestion: {question}"
-
-    # Get the model's response
-    answer = get_response(full_prompt, question)
+    combined_context = f"{persona_prompt}\n\n{context}"
+    answer = get_response(combined_context, question)
     return {"question": question, "persona": persona, "answer": answer}

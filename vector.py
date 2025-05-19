@@ -4,7 +4,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 
 # Define the folder containing your .txt files
-FOLDER_PATH = "data/txt_files"  # <- change this to your folder path
+FOLDER_PATH = "Data"
 
 # Load all .txt files from the folder
 documents = []

@@ -2,9 +2,10 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
     event.preventDefault(); // Prevent form submission if inside a form
 
     const submitButton = event.currentTarget;
-    const persona = document.getElementById('persona-select').value;
+    const persona = document.getElementById('persona').value;
+    const question = document.getElementById('question').value;
     const aiInfo = document.querySelector('.ai-info');
-    const outputArea = document.getElementById('output');
+    const outputArea = document.getElementById('answer');
     const avatarImg = document.querySelector('.ai-avatar');
 
     // Button pop animation
@@ -28,9 +29,17 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
         avatarImg.src = '/static/img/default-avatar.png';
     }
 
-    // Example: type out answer (replace with your actual AI response logic)
-    const answer = "This is an example AI response based on your selected persona.";
-    typeOutText(answer, outputArea);
+    // Fetch AI response from FastAPI backend
+    fetch(`/ask?question=${encodeURIComponent(question)}&persona=${encodeURIComponent(persona)}`)
+        .then(response => response.json())
+        .then(data => {
+            const answer = data.answer;
+            typeOutText(answer, outputArea);
+        })
+        .catch(error => {
+            console.error('Error fetching AI response:', error);
+            outputArea.innerHTML = "⚠️ Something went wrong. Please try again later.";
+        });
 });
 
 // Typing effect function (make sure this exists somewhere in your JS)
