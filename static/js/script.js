@@ -30,17 +30,27 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
     }
 
     // Fetch AI response from FastAPI backend
-    fetch(`/ask?question=${encodeURIComponent(question)}&persona=${encodeURIComponent(persona)}`)
-        .then(response => response.json())
-        .then(data => {
-            const answer = data.answer;
+console.log(`Fetching response for question: ${question}, persona: ${persona}`);
+fetch(`/ask?question=${encodeURIComponent(question)}&persona=${encodeURIComponent(persona)}`)
+    .then(response => {
+        console.log(`Response status: ${response.status}`);
+        return response.json();
+    })
+    .then(data => {
+        console.log('Response data:', data);
+        const answer = data.answer;
+        if (answer) {
             typeOutText(answer, outputArea);
-        })
-        .catch(error => {
-            console.error('Error fetching AI response:', error);
-            outputArea.innerHTML = "⚠️ Something went wrong. Please try again later.";
-        });
+        } else {
+            outputArea.textContent = 'No response received from the AI.';
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching response:', error);
+        outputArea.textContent = 'Sorry, something went wrong. Please try again.';
+    }); 
 });
+
 
 // Typing effect function (make sure this exists somewhere in your JS)
 function typeOutText(text, element) {
@@ -59,3 +69,4 @@ function typeOutText(text, element) {
         }
     }, 50); // Adjust speed here
 }
+

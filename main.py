@@ -1,15 +1,20 @@
 import os
+import httpx 
+import logging
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
+from langchain.schema import Document
 
 # Create FastAPI app instance
 app = FastAPI()
 
 folder_path = "Data"
+
+logging.basicConfig(level=logging.INFO)
 
 # Serve static files (CSS, JavaScript, etc.) from the "static" folder
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -36,14 +41,16 @@ prompt = ChatPromptTemplate.from_template(
 
 # Load and chunk parenting guides (from text files in the folder)
 def load_and_chunk_folder(folder_path, chunk_size=1000, chunk_overlap=200):
+    documents = [] # List to hold Document objects
     all_text = ""
 
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
-            file_path = os.path.join(folder_path, filename)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-                all_text += f"\n\n=== {filename} ===\n\n{content}"
+            print(f"Processing file: {filename}")
+            with open(os.path.join(folder_path, filename), "r", encoding="utf-8") as file:
+                text = file.read()
+                all_text += text + "\n"  # Append the text to all_text with a newline
+                documents.append(Document(page_content=text, metadata={"source": filename}))
 
     # Splitting the loaded text into chunks for processing
     splitter = RecursiveCharacterTextSplitter(
@@ -51,7 +58,11 @@ def load_and_chunk_folder(folder_path, chunk_size=1000, chunk_overlap=200):
         chunk_overlap=chunk_overlap,
         separators=["\n\n", "\n", ".", " "]
     )
-    return splitter.split_text(all_text)
+    chunks = splitter.split_text(all_text)  # Split the concatenated text into chunks
+
+    if not chunks:
+        logging.error("No chunks were loaded from the folder.")
+    return chunks
 
 # Get response based on user query and context
 def get_response(context, question):
@@ -67,11 +78,24 @@ async def home():
 # Endpoint to get parenting advice based on a question and persona
 @app.get("/ask")
 async def ask_parenting_advice(question: str, persona: str):
+    logging.info(f"Received question: {question}")
+    logging.info(f"Selected persona: {persona}")
+    
+    if not question.strip():
+        return {"error": "Question cannot be empty."}
+    if persona not in ["friendly", "professional", "humorous"]:
+        return {"error": f"Invalid persona: {persona}. Choose from 'friendly', 'professional', or 'humorous'."}
+    
     folder_path = "Data"  # Your folder with parenting guide text files
 
     # Load and chunk the text content from parenting guides
     chunks = load_and_chunk_folder(folder_path)
+    if not chunks:
+        logging.error("No chunks were loaded from the folder.")
+        return {"error": "No data available to generate a response."}
+    
     context = "\n\n".join(chunks[:3])  # Using the first 3 chunks as context
+    logging.info(f"Context: {context}")
 
     # Adjust the AI prompt based on the persona
     persona_prompts = {
@@ -81,6 +105,14 @@ async def ask_parenting_advice(question: str, persona: str):
     }.get(persona, "Answer in a neutral tone.")
 
     # Combine persona prompt with the context
-    combined_context = f"{persona_prompt}\n\n{context}"
-    answer = get_response(combined_context, question)
-    return {"question": question, "persona": persona, "answer": answer}
+    combined_context = f"{persona_prompts}\n\n{context}"
+    logging.info(f"Combined context: {combined_context}")
+    
+    # Generate the response
+    try:
+        answer = get_response(combined_context, question)
+        logging.info(f"Generated answer: {answer}")
+        return {"question": question, "persona": persona, "answer": answer}
+    except Exception as e:
+        logging.error(f"Error generating response: {e}")
+        return {"error": "Failed to generate a response."}
