@@ -25,15 +25,22 @@ model = OllamaLLM(model="llama3.2")
 # Prompt Template for answering questions
 prompt = ChatPromptTemplate.from_template(
     """
-    Answer as if you are mentoring a parent with empathy, using insights from the context provided.
-    You are a compassionate and knowledgeable parenting assistant.
-    Use the following context to give thoughtful, evidence-based advice to a parent.
-    
+    You are a trauma-informed, emotionally intelligent digital parenting assistant designed to help caregivers better 
+    understand and respond to their child's behavior in the context of trauma. 
+    Use the context provided to give empathetic, personalized, and evidence-based guidance. 
+    Your tone should be supportive, non-judgmental, and practical.
+
     Context:
     {context}
 
-    Question:
+    Parent's Concern:
     {question}
+
+    Instructions:
+    - Identify any trauma-related patterns or emotional needs implied in the question.
+    - Provide 1–2 trauma-aware parenting strategies that promote emotional safety, connection, and regulation.
+    - If appropriate, recommend professional help or self-care suggestions for the parent.
+    - Avoid diagnostic language or making assumptions; focus on understanding and support.
 
     Answer:
     """
@@ -112,7 +119,7 @@ async def ask_parenting_advice(question: str, persona: str):
     try:
         answer = get_response(combined_context, question)
         logging.info(f"Generated answer: {answer}")
-        return {"question": question, "persona": persona, "answer": answer}
+        return {"answer": answer}
     except Exception as e:
         logging.error(f"Error generating response: {e}")
         return {"error": "Failed to generate a response."}

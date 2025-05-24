@@ -40,7 +40,8 @@ fetch(`/ask?question=${encodeURIComponent(question)}&persona=${encodeURIComponen
         console.log('Response data:', data);
         const answer = data.answer;
         if (answer) {
-            typeOutText(answer, outputArea);
+            //typeOutText(answer, outputArea);
+            outputArea.textContent = answer; // Directly set the text for now
         } else {
             outputArea.textContent = 'No response received from the AI.';
         }
