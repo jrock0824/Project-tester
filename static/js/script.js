@@ -54,7 +54,7 @@ fetch(`/ask?question=${encodeURIComponent(question)}&persona=${encodeURIComponen
 
 
 // Typing effect function (make sure this exists somewhere in your JS)
-function typeOutText(text, element) {
+/*function typeOutText(text, element) {
     element.innerHTML = ''; // Clear previous content
     element.style.opacity = 0;
     let index = 0;
@@ -69,5 +69,5 @@ function typeOutText(text, element) {
             element.style.opacity = 1; // Fade in after typing
         }
     }, 50); // Adjust speed here
-}
+}*/
 

@@ -1,0 +1,52 @@
+=== Study: ADHD, Stimulant Treatment, and Substance Abuse in Adulthood ===
+Source Type: Longitudinal Follow-up Study
+Focus: ADHD, stimulant medication, substance use, risk factors
+
+Summary:
+This study explored the long-term risk of substance use disorders (SUD) and alcohol abuse in individuals diagnosed with ADHD. The researchers followed participants into adulthood and compared their outcomes with those of the general population. Findings showed that individuals with ADHD were significantly more likely to develop SUD (RR = 7.7) and alcohol abuse (RR = 5.2).
+
+Key Insights:
+- Female participants with ADHD had a higher risk of substance abuse than male counterparts.
+- Early initiation of stimulant treatment was a contributing factor.
+- Childhood co-occurring disorders increased vulnerability.
+
+Implications for Parenting Advice:
+- Parents of children with ADHD should be informed of long-term risks tied to early stimulant use and trauma.
+- Emotional regulation and gender-specific support strategies are essential.
+- Preventative care and family therapy may help mitigate future substance abuse risks.
+
+=== Study: The Generational Trauma Card (GTC) for Adolescent Parents ===
+Source Type: Educational Intervention Study
+Focus: Generational trauma, adolescent parenting, trauma education
+
+Summary:
+This study examined the impact of a Generational Trauma Curriculum (GTC) on adolescent parents. The tool is used to educate young parents on how trauma can be passed down intergenerationally and how to recognize patterns of inherited stress and adversity.
+
+Key Statistics:
+- 88.9% of participants experienced at least one form of childhood adversity.
+- 44.4% reported more than five traumatic events.
+- 40.9% had experienced relapse.
+- 71.1% had long hospital stays.
+
+Implications for Parenting Advice:
+- Educating parents about trauma transmission can improve emotional awareness and disrupt cycles of adversity.
+- Parents benefit from guided tools that explain trauma in relatable terms.
+- AI systems can replicate trauma education modules like the GTC to offer structured support in real time.
+
+=== Study: Relapse and Hospitalization Among Adults With Childhood Trauma ===
+Source Type: Clinical Observational Study
+Focus: Childhood trauma, mental illness, hospitalization, therapy
+
+Summary:
+This study explored how childhood trauma affects the course of adult psychiatric illness. Specifically, it found that adults with childhood trauma were more likely to experience relapse and longer hospital stays than those without such trauma. It also emphasized the importance of trauma-informed care.
+
+Key Findings:
+- Childhood trauma correlated with low self-esteem and emotional abuse.
+- Those with trauma histories experienced longer psychiatric hospitalization periods.
+- Trauma-informed therapy reduced relapse and improved outcomes.
+
+Implications for Parenting Advice:
+- Parents need tools that help identify and address past trauma influencing current parenting behavior.
+- AI support can flag emotional instability or unhealthy parenting patterns connected to unresolved trauma.
+- Trauma-informed parenting strategies can help prevent future mental health issues in both parent and child.
+

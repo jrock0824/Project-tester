@@ -1,82 +1,109 @@
 === Interview: Jason Wilson on The Breakfast Club (2023) ===
-Main Point: Highlights Jason Wilson's stance on generational trauma and the importance of encouraging young men to express their emotions. Discusses breaking the cycle of generational trauma through mentorship.
-Credibility: Based on Wilson’s personal and professional experience in mentoring young Black boys.
-Source: Breakfast Club Power 105.1 FM. (2023, Feb 3). Jason Wilson Speaks On Comprehensive Manhood, Generational Healing, The Cave Of Adullam + More. [Video]. YouTube. https://youtu.be/04eZdQaDoRY
+Main Point:
+Jason Wilson discusses generational trauma, emotional repression in young men, and the role of mentorship in healing. He encourages emotional transparency as a form of strength and emphasizes the importance of father figures and structured emotional guidance.
+Credibility:
+Wilson is the founder of a non-profit mentoring organization (The Cave of Adullam) and speaks from lived experience and years of working with trauma-impacted youth, particularly young Black boys.
+Application for LLM:
+Wilson’s emphasis on emotional expression supports the model’s trauma-informed approach. His work aligns with AI's role in guiding parents to break cycles of emotional suppression through encouragement and understanding.
+Source:
+Breakfast Club Power 105.1 FM. (2023, Feb 3). Jason Wilson Speaks On Comprehensive Manhood, Generational Healing, The Cave Of Adullam + More [Video]. YouTube. https://youtu.be/04eZdQaDoRY
 
 === Interview: Dr. Stacey Patton on DCP Entertainment (2023) ===
-Main Point: Explores the negative impact of corporal punishment in the Black community, advocating for non-violent parenting approaches.
-Credibility: Dr. Patton is a child abuse survivor, award-winning author, journalist, child advocate, and professor.
-Source: DCP Entertainment. (2023, July 7). Dr. Stacey Patton on Whupping Children Will Not Save Black America. [Video]. YouTube. https://www.youtube.com/watch?v=kHh9Zfvx9uU
+Main Point:
+Dr. Patton critiques corporal punishment within Black communities and advocates for non-violent parenting that fosters trust, security, and emotional well-being.
+Credibility:
+A child abuse survivor and respected scholar, Patton is an award-winning author, journalist, and professor with expertise in child welfare and race relations.
+Application for LLM:
+This reinforces the AI model's guidance against physical punishment and supports approaches that promote co-regulation, empathy, and behavioral alternatives.
+Source:
+DCP Entertainment. (2023, July 7). Dr. Stacey Patton on Whupping Children Will Not Save Black America [Video]. YouTube. https://www.youtube.com/watch?v=kHh9Zfvx9uU
 
 === Article: Modifiable Resilience Factors to Childhood Adversity ===
-Main Point: Discusses parenting strategies that help mitigate childhood trauma, including support for maternal mental health and household routines.
-Credibility: Peer-reviewed article by social epidemiologist Renée Boynton-Jarrett.
-Source: Traub, F., & Boynton-Jarrett, R. (2016, November 15). Modifiable Resilience Factors to Childhood Adversity for Clinical Pediatric Practice. https://publications-aap-org.libproxy.uco.edu/pediatrics/article/139/5/e20162569
+Main Point:
+The article outlines key parenting strategies—like maternal mental health support, daily routines, and consistent nurturing—that can buffer children against the effects of trauma.
+Credibility:
+Peer-reviewed publication by Dr. Renée Boynton-Jarrett, a social epidemiologist known for her research on childhood adversity.
+Application for LLM:
+Supports the AI’s advice on practical, resilience-based parenting techniques that promote emotional regulation and stability.
+Source:
+Traub, F., & Boynton-Jarrett, R. (2016). Modifiable Resilience Factors to Childhood Adversity. https://publications-aap-org.libproxy.uco.edu/pediatrics/article/139/5/e20162569
 
 === Article: Maternal Childhood Adversities and Negative Parenting ===
-Main Point: Explores the connection between mothers’ childhood trauma and their negative parenting styles, including neglect and physical abuse.
-Credibility: Peer-reviewed systematic review.
-Source: Lotto, C. R., Rachel, E., Altafim, P., Beatriz, M., & Linhares, M. (2023, April). Maternal History of Childhood Adversities and Later Negative Parenting. https://advance-lexis-com.libproxy.uco.edu/document/?pdmfid=1516831...
+Main Point:
+Finds strong links between mothers’ adverse childhood experiences (ACEs) and harmful parenting styles like neglect, harsh discipline, and emotional unavailability.
+Credibility:
+A peer-reviewed systematic review, aggregating research across multiple studies.
+Application for LLM:
+Helps the model recognize intergenerational trauma patterns and inform mothers about the subconscious ways their past might influence their current parenting.
+Source:
+Lotto, C. R., Rachel, E., Altafim, P., Beatriz, M., & Linhares, M. (2023, April). Maternal History of Childhood Adversities and Later Negative Parenting. https://advance-lexis-com.libproxy.uco.edu/document/?pdmfid=1516831...
 
 === Article: Childhood Trauma and Adult Mental Disorder ===
-Main Point: Emphasizes the long-term mental health consequences of childhood trauma and the need for early intervention.
-Credibility: Systematic review and meta-analysis from peer-reviewed longitudinal studies.
-Source: McKay, M. et al. (2020). Childhood trauma and adult mental disorder. https://web-s-ebscohost-com.libproxy.uco.edu/ehost/pdfviewer/pdfviewer?vid=0&sid=2285611e...
+Main Point:
+This meta-analysis finds strong correlations between childhood trauma and increased risk for mental disorders in adulthood, emphasizing early intervention.
+Credibility:
+Based on longitudinal peer-reviewed research involving expert authors across health disciplines.
+Application for LLM:
+Validates the LLM’s emphasis on timely parental support and early awareness of trauma impacts.
+Source:
+McKay, M., et al. (2020). Childhood trauma and adult mental disorder. https://web-s-ebscohost-com.libproxy.uco.edu/ehost/pdfviewer/pdfviewer?vid=0...
 
-=== Article: Childhood Trauma’s Long-Term Impact ===
-Main Point: Discusses how trauma leads to long-term physical and mental health issues like depression and anxiety.
-Credibility: Published in the European Journal of Trauma and Dissociation.
-Source: Downey, C., & Crummy, A. (2021, June 30). The impact of childhood trauma. https://www.sciencedirect.com/science/article/pii/S2468749921000375
+=== Article: The Impact of Childhood Trauma on Children’s Wellbeing and Adult Behavior ===
+Main Point:
+Details the long-term consequences of childhood trauma, such as anxiety, depression, and behavioral issues.
+Credibility:
+Published in the European Journal of Trauma and Dissociation and authored by credible mental health researchers.
+Application for LLM:
+Supports early trauma detection and tailored recommendations for emotional development and healing.
+Source:
+Downey, C., & Crummy, A. (2021, June 30). https://www.sciencedirect.com/science/article/pii/S2468749921000375
 
 === Article: Role Models in Adolescent Development ===
-Main Point: Explores the influence of both positive and negative role models on children’s development.
-Credibility: Written by experienced health professionals and university professors.
-Source: Zimmerman, M., Hurd, N. M., & Wittrup, A. (2011). Role Models in Adolescent Development. https://www.researchgate.net/publication/304035431_Role_Models
+Main Point:
+Explores the dual nature of role models and how their behavior—positive or negative—shapes adolescent development.
+Credibility:
+Authored by university faculty and backed by psychological development research.
+Application for LLM:
+Guides the LLM to emphasize modeling, mentorship, and boundary-setting as key components of parenting advice.
+Source:
+Zimmerman, M., Hurd, N. M., & Wittrup, A. (2011). https://www.researchgate.net/publication/304035431_Role_Models
 
 === Movie: Antwone Fisher (2002) ===
-Genres: Drama, Biography
-Main Point: Follows a young man's healing from childhood trauma through therapy and confronting his past.
-Credibility: Based on a true story, told by Antwone Fisher, directed by Denzel Washington.
-Lessons: Healing may require both discussion and direct confrontation with one’s past.
-Source: Washington, H. (Denzel). (2002). Antwone Fisher. [Film]. Sony Picture Studios
+Main Point:
+Portrays a young man's healing process through therapy after a traumatic childhood. Key themes include identity, forgiveness, and emotional growth.
+Credibility:
+Based on a true story and written by the real Antwone Fisher, directed by Denzel Washington.
+Application for LLM:
+This reinforces the AI's emphasis on the healing power of open dialogue and the importance of confronting unresolved trauma.
+Source:
+Washington, H. (2002). Antwone Fisher [Film]. Sony Picture Studios.
 
 === Movie: Boyz n the Hood (1991) ===
-Genres: Coming-of-age, Crime, Drama
-Setting: South Central Los Angeles, 1984–1991
-Main Characters:
-- Tre Styles: Intelligent teen raised by his strict but caring father.
-- Furious Styles: Tre’s father, strong role model who promotes responsibility and community awareness.
-- Doughboy: Tre’s childhood friend; a Crip gang member hardened by life and loss.
-- Ricky: Doughboy's half-brother, a hopeful football star with a young son.
-- Brandi: Tre’s girlfriend, driven and moral.
-Themes:
-- The consequences of gang violence and systemic oppression.
-- Importance of fatherhood and male mentorship.
-- Coming-of-age in an environment of poverty and crime.
-- Struggle between choosing revenge or rising above your environment.
-- Police brutality and institutional neglect.
-Key Events:
-- Tre moves in with his father to learn discipline.
-- Ricky is murdered by a rival gang, sparking a desire for revenge.
-- Doughboy kills Ricky's murderers but later dies himself.
-- Tre rejects revenge and leaves for college with Brandi.
-Lessons:
-- Violence often creates a cycle that leads to more loss.
-- Strong role models can steer youth away from destructive paths.
-- Escaping a toxic environment often requires hard personal decisions.
-- Brotherhood and loyalty must be balanced with survival and self-growth.
-- Understanding systemic issues (racism, poverty, policing) helps frame individual struggles.
-Epilogue:
-- Ricky dies before receiving college results, which showed he passed.
-- Doughboy is killed two weeks later.
-- Tre leaves Los Angeles to start college in Atlanta.
+Main Point:
+Follows a group of young Black men navigating systemic oppression, gang violence, and life-altering decisions.
+Credibility:
+Written and directed by John Singleton, based on real-life stories from South Central Los Angeles.
+Application for LLM:
+Illustrates the environmental impact on youth development and supports LLM advice around mentorship, environment, and resilience.
+Source:
+Singleton, J. (1991). Boyz n the Hood [Film]. Columbia Pictures.
 
 === Book: Spare the Kids by Stacey Patton (2017) ===
-Main Point: Argues against corporal punishment in Black communities, exploring how race, religion, and history influence parenting.
-Credibility: Dr. Patton is a child abuse survivor, journalist, and professor.
-Source: Patton, S. (2017). Spare the kids - why whupping children won't save Black America. Beacon Press.
+Main Point:
+Analyzes how societal influences like religion, history, and systemic racism contribute to corporal punishment in Black households.
+Credibility:
+Written by Dr. Patton, a child advocate and award-winning scholar with firsthand experience.
+Application for LLM:
+Provides foundation for discouraging physical punishment and encourages cultural sensitivity in LLM feedback.
+Source:
+Patton, S. (2017). Spare the Kids: Why Whupping Children Won’t Save Black America. Beacon Press.
 
 === Book: Battle Cry by Jason Wilson (2021) ===
-Main Point: Focuses on men healing emotional wounds, releasing trauma, and mastering their emotional health.
-Credibility: Based on Wilson’s personal story and mentorship experience.
-Source: Wilson, J. (2021). Battle Cry: Waging and Winning the War Within. Yah Dabar LLC.
+Main Point:
+Centers around men healing from trauma through emotional mastery, spiritual strength, and breaking harmful masculine stereotypes.
+Credibility:
+Wilson integrates personal experience and his success mentoring boys through emotional transformation.
+Application for LLM:
+Equips the model to recognize the emotional needs of fathers and suggest emotionally intelligent leadership in parenting.
+Source:
+Wilson, J. (2021). Battle Cry: Waging and Winning the War Within. Yah Dabar LLC.

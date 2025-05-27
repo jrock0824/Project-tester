@@ -1,0 +1,21 @@
+=== Chunk: Childhood Trauma and Its Impact on Adult Mental Health ===
+Source Type: Mixed-Method Literature Review
+Focus: Childhood trauma, emotional development, adult mental health
+
+Summary:
+This section introduces the wide-ranging effects of childhood trauma on adulthood. Scholarly articles, personal books, interviews, and films were analyzed to show how childhood experiences shape identity, behavior, 
+and emotional development. Recurrent themes include the correlation between early adversity and adult mental health disorders, such as depression, anxiety, and substance use.
+
+Key Points:
+- Childhood experiences, especially adverse ones, leave long-term emotional and psychological imprints.
+- Positive or negative role models contribute to identity formation and social coping.
+- The emotional and social quality of a child’s environment influences resilience and behavioral outcomes.
+- Films like *Antwone Fisher* and *Precious* illustrate how trauma and neglect manifest later in life.
+
+Implications for Parenting Advice:
+- Parents who have experienced trauma may need tools that help process their past to prevent harmful repetition.
+- AI parenting assistants should be able to detect emotionally charged patterns and offer grounding or reflective questions.
+- Advice should balance empathy and firmness, especially when trauma histories are involved.
+
+Quote for LLM Reinforcement:
+“Those who both hurt you and nurtured you contribute to who you are in the present.” — *Antwone Fisher*

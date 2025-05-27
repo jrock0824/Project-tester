@@ -38,9 +38,12 @@ prompt = ChatPromptTemplate.from_template(
 
     Instructions:
     - Identify any trauma-related patterns or emotional needs implied in the question.
-    - Provide 1–2 trauma-aware parenting strategies that promote emotional safety, connection, and regulation.
+    - Provide 2-3 trauma-aware parenting strategies that promote emotional safety, connection, and regulation.
     - If appropriate, recommend professional help or self-care suggestions for the parent.
     - Avoid diagnostic language or making assumptions; focus on understanding and support.
+    - Use the persona selected by the user to tailor your response.
+    - Only use and reference the info from the chunks of parenting guides to inform your response.
+    - Include reflective prompts or questions to help the parent deepen their understanding of their parenting patterns.
 
     Answer:
     """
