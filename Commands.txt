@@ -160,3 +160,16 @@ rm -r foldername
 ---
 
 Let me know if you want to add Docker, PostgreSQL, SSH, or deployment commands!
+
+
+The different options arent appearing, the options for the AI model persona arent displaying
+
+Or if you're using your virtual environment:
+
+```bash
+source venv/bin/activate && pip install langchain-community
+```
+
+This package is required for the ChromaDB vector store integration that we just added to your RAG system. Once you install it, your app should start successfully and you'll have a fully functional RAG-powered parenting assistant!
+
+Would you like me to help you with anything else once you've installed the package?
